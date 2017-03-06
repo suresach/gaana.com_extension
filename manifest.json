@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "Gaana Control",
+    "description": "This extension controls gaana.com player.",
+    "version": "1.0",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    // "background": {
+    //     "scripts": ["background.js"],
+    //     "persistent" : false
+    // },
+    // "content_scripts": [{
+    //     "matches": ["*://newtab/*"],
+    //     "js": ["background.js"],
+    //     "run_at": "document_end"
+    // }],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "activeTab",
+    "clipboardWrite"
+        // "audioCapture"
+    ]
+}
